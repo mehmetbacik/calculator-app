@@ -1,113 +1,59 @@
-import React, { useState } from 'react';
-import './Calculator.css';
+import React, { useState } from "react";
+import { Display } from "../Display/index.ts";
+import { Keypad } from "../Keypad/index.ts";
+import { ThemeSelector } from "../ThemeSelector/index.ts";
+import "./Calculator.css";
+
+import { evaluate } from "mathjs";
 
 const Calculator: React.FC = () => {
-  const [input, setInput] = useState<string>('');
-  const [theme, setTheme] = useState<string>('theme1'); // Başlangıç teması
+  const [displayValue, setDisplayValue] = useState("0");
+  const [theme, setTheme] = useState<number>(1);
 
-  const handleButtonClick = (value: string) => {
-    setInput((prevInput) => prevInput + value);
+  const updateDisplay = (newValue: string) => {
+    setDisplayValue(newValue);
   };
 
-  const handleCalculate = () => {
+  const changeTheme = (newTheme: number) => {
+    setTheme(newTheme);
+  };
+
+  const calculate = () => {
     try {
-      setInput(eval(input).toString());
+      const result = evaluate(displayValue);
+      updateDisplay(result.toString());
     } catch (error) {
-      setInput('Hata');
+      updateDisplay("Error");
     }
   };
 
-  const handleClear = () => {
-    setInput('');
+  const clearDisplay = () => {
+    updateDisplay("0");
   };
 
-  const toggleTheme = () => {
-    switch (theme) {
-      case 'theme1':
-        setTheme('theme2');
-        break;
-      case 'theme2':
-        setTheme('theme3');
-        break;
-      case 'theme3':
-        setTheme('theme1');
-        break;
-      default:
-        break;
+  const handleButtonClick = (buttonValue: string) => {
+    if (buttonValue === "=") {
+      calculate();
+    } else if (buttonValue === "C") {
+      clearDisplay();
+    } else if (buttonValue === "DEL") {
+      // DEL düğmesine tıklanırsa, son karakteri sil
+      setDisplayValue(prevValue => prevValue.slice(0, -1));
+    } else if (buttonValue === "RESET") {
+      // RESET düğmesine tıklanırsa, girişi sıfırla
+      setDisplayValue("0");
+    } else {
+      // Diğer düğmelere tıklanırsa, girişi güncelle
+      setDisplayValue(prevValue => prevValue === "0" ? buttonValue : prevValue + buttonValue);
     }
   };
-
-  const getThemeClassName = () => {
-    switch (theme) {
-      case 'theme1':
-        return 'theme1';
-      case 'theme2':
-        return 'theme2';
-      case 'theme3':
-        return 'theme3';
-      default:
-        return '';
-    }
-  };
+  
 
   return (
-    <div className={`flex justify-center items-center h-screen ${getThemeClassName()}`}>
-      <div className="bg-gray-300 p-8 rounded-lg shadow-md">
-        <div className="mb-4">
-          <input
-            type="text"
-            value={input}
-            readOnly
-            className="w-full p-2 border border-gray-500 rounded"
-          />
-        </div>
-        <div className="grid grid-cols-4 gap-4">
-          {['7', '8', '9', '/'].map((button) => (
-            <button
-              key={button}
-              onClick={() => handleButtonClick(button)}
-              className={`p-2 ${button === '=' ? 'bg-green-500' : 'bg-blue-500'} text-white rounded`}
-            >
-              {button}
-            </button>
-          ))}
-          {['4', '5', '6', '*'].map((button) => (
-            <button
-              key={button}
-              onClick={() => handleButtonClick(button)}
-              className={`p-2 ${button === '=' ? 'bg-green-500' : 'bg-blue-500'} text-white rounded`}
-            >
-              {button}
-            </button>
-          ))}
-          {['1', '2', '3', '-'].map((button) => (
-            <button
-              key={button}
-              onClick={() => handleButtonClick(button)}
-              className={`p-2 ${button === '=' ? 'bg-green-500' : 'bg-blue-500'} text-white rounded`}
-            >
-              {button}
-            </button>
-          ))}
-          {['0', '.', '=', '+'].map((button) => (
-            <button
-              key={button}
-              onClick={button === '=' ? handleCalculate : () => handleButtonClick(button)}
-              className={`p-2 ${button === '=' ? 'bg-green-500' : 'bg-blue-500'} text-white rounded`}
-            >
-              {button}
-            </button>
-          ))}
-          <button onClick={handleClear} className="p-2 bg-red-500 text-white rounded col-span-2">
-            Clear
-          </button>
-        </div>
-      </div>
-      <div className="absolute top-4 right-4">
-        <button onClick={toggleTheme} className="p-2 bg-gray-500 text-white rounded">
-          Toggle Theme
-        </button>
-      </div>
+    <div className="container mx-auto max-w-md p-4 bg-gray-200 rounded-lg shadow-md">
+      <ThemeSelector theme={theme} changeTheme={changeTheme} />
+      <Display displayValue={displayValue} />
+      <Keypad handleButtonClick={handleButtonClick} />
     </div>
   );
 };

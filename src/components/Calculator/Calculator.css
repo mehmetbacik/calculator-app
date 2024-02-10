@@ -1,11 +1,53 @@
-.theme1 {
-    background-color: red;
+.calculator {
+  width: 300px;
+  background-color: navy;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.theme2 {
-    background-color: green;
+.display {
+  background-color: black;
+  color: red;
+  font-size: 24px;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
-.theme3 {
-    background-color: blue;
+.theme-selector {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.theme-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.theme-circle.active {
+  background-color: red;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
 }

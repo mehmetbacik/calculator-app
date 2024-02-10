@@ -4,7 +4,7 @@ import { Calculator } from './components/Calculator/index.ts';
 
 function App() {
   return (
-    <div className="App">
+    <div className="flex items-center justify-center h-screen">
       <Calculator />
     </div>
   );
