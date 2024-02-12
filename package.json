@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass-watch": "sass --watch src/styles:dist/css --ignore src/styles/tailwind.css"
+    "sass-watch": "sass --watch src/styles:src/dist/css --style=expanded | grep -v tailwind.css"
   },
   "eslintConfig": {
     "extends": [
