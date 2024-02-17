@@ -37,13 +37,10 @@ const Calculator: React.FC = () => {
     } else if (buttonValue === "C") {
       clearDisplay();
     } else if (buttonValue === "DEL") {
-      // DEL düğmesine tıklanırsa, son karakteri sil
       setDisplayValue(prevValue => prevValue.slice(0, -1));
     } else if (buttonValue === "RESET") {
-      // RESET düğmesine tıklanırsa, girişi sıfırla
       setDisplayValue("0");
     } else {
-      // Diğer düğmelere tıklanırsa, girişi güncelle
       setDisplayValue(prevValue => prevValue === "0" ? buttonValue : prevValue + buttonValue);
     }
   };
