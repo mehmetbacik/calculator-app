@@ -41,8 +41,70 @@ body.theme-1 .theme-selector .themes .buttons .theme-button.active {
 body.theme-2 {
   background-color: hsl(0, 0%, 90%);
 }
+body.theme-2 .logo .content {
+  font-weight: bold;
+  color: hsl(60, 10%, 19%);
+}
+body.theme-2 .theme-selector .headline .title {
+  color: hsl(60, 10%, 19%);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+body.theme-2 .theme-selector .themes .title {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body.theme-2 .theme-selector .themes .title span {
+  color: hsl(60, 10%, 19%);
+  font-size: 14px;
+  font-weight: bold;
+}
+body.theme-2 .theme-selector .themes .buttons {
+  background-color: hsl(0, 5%, 81%);
+  border-radius: 15px;
+  padding: 5px;
+}
+body.theme-2 .theme-selector .themes .buttons .theme-button {
+  background-color: hsl(0, 5%, 81%);
+}
+body.theme-2 .theme-selector .themes .buttons .theme-button.active {
+  background-color: hsl(25, 98%, 40%);
+}
 body.theme-3 {
   background-color: hsl(268, 75%, 9%);
+}
+body.theme-3 .logo .content {
+  font-weight: bold;
+  color: hsl(52, 100%, 62%);
+}
+body.theme-3 .theme-selector .headline .title {
+  color: hsl(52, 100%, 62%);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+body.theme-3 .theme-selector .themes .title {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body.theme-3 .theme-selector .themes .title span {
+  color: hsl(52, 100%, 62%);
+  font-size: 14px;
+  font-weight: bold;
+}
+body.theme-3 .theme-selector .themes .buttons {
+  background-color: hsl(268, 47%, 21%);
+  border-radius: 15px;
+  padding: 5px;
+}
+body.theme-3 .theme-selector .themes .buttons .theme-button {
+  background-color: hsl(268, 47%, 21%);
+}
+body.theme-3 .theme-selector .themes .buttons .theme-button.active {
+  background-color: hsl(176, 100%, 44%);
 }
 
 /*# sourceMappingURL=styles.css.map */

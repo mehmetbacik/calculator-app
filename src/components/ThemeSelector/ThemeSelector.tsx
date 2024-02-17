@@ -37,7 +37,7 @@ const ThemeSelector: React.FC<ThemeSelectorProps> = ({
           <span>2</span>
           <span>3</span>
         </div>
-        <div className="buttons flex items-center gap-[5px]">
+        <div className="buttons flex items-center gap-[8px]">
           {[1, 2, 3].map((themeNumber) => (
             <div
               key={themeNumber}

@@ -46,8 +46,86 @@ body {
         }
         &.theme-2 {
             background-color: $light-gray;
+            .logo {
+                .content {
+                    font-weight: bold;
+                    color: $very-dark-grayish-yellow;
+                }
+            }
+            .theme-selector {
+                .headline {
+                    .title {
+                        color:  $very-dark-grayish-yellow;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-weight: bold;
+                    }
+                }
+                .themes {
+                    .title {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        span {
+                            color: $very-dark-grayish-yellow;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                    }
+                    .buttons {
+                        background-color: $grayish-red;
+                        border-radius: 15px;
+                        padding: 5px;
+                        .theme-button {
+                            background-color: $grayish-red;
+                            &.active {
+                                background-color: $orange;
+                            }
+                        }
+                    }
+                }
+            }
         }
         &.theme-3 {
             background-color: $very-dark-violet-main;
+            .logo {
+                .content {
+                    font-weight: bold;
+                    color: $light-yellow;
+                }
+            }
+            .theme-selector {
+                .headline {
+                    .title {
+                        color:  $light-yellow;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-weight: bold;
+                    }
+                }
+                .themes {
+                    .title {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        span {
+                            color: $light-yellow;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                    }
+                    .buttons {
+                        background-color: $very-dark-violet;
+                        border-radius: 15px;
+                        padding: 5px;
+                        .theme-button {
+                            background-color: $very-dark-violet;
+                            &.active {
+                                background-color: $pure-cyan;
+                            }
+                        }
+                    }
+                }
+            }
         }
 }
