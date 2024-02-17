@@ -2,9 +2,41 @@
 body {
   font-family: "League Spartan", sans-serif;
   font-size: 32px;
+  line-height: normal;
 }
 body.theme-1 {
   background-color: hsl(222, 26%, 31%);
+}
+body.theme-1 .logo .content {
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+body.theme-1 .theme-selector .headline .title {
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+body.theme-1 .theme-selector .themes .title {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body.theme-1 .theme-selector .themes .title span {
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: bold;
+}
+body.theme-1 .theme-selector .themes .buttons {
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 15px;
+  padding: 5px;
+}
+body.theme-1 .theme-selector .themes .buttons .theme-button {
+  background-color: hsl(223, 31%, 20%);
+}
+body.theme-1 .theme-selector .themes .buttons .theme-button.active {
+  background-color: hsl(6, 63%, 50%);
 }
 body.theme-2 {
   background-color: hsl(0, 0%, 90%);

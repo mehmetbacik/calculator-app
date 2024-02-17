@@ -2,8 +2,8 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <div>
-      <span>calc</span>
+    <div className="logo">
+      <span className="content">calc</span>
     </div>
   );
 };

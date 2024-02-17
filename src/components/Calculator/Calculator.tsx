@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Header } from "../Header/index.ts";
+import { Logo } from "../Logo/index.ts";
 import { Display } from "../Display/index.ts";
 import { Keypad } from "../Keypad/index.ts";
 import { ThemeSelector } from "../ThemeSelector/index.ts";
@@ -38,19 +38,22 @@ const Calculator: React.FC = () => {
     } else if (buttonValue === "C") {
       clearDisplay();
     } else if (buttonValue === "DEL") {
-      setDisplayValue(prevValue => prevValue.slice(0, -1));
+      setDisplayValue((prevValue) => prevValue.slice(0, -1));
     } else if (buttonValue === "RESET") {
       setDisplayValue("0");
     } else {
-      setDisplayValue(prevValue => prevValue === "0" ? buttonValue : prevValue + buttonValue);
+      setDisplayValue((prevValue) =>
+        prevValue === "0" ? buttonValue : prevValue + buttonValue
+      );
     }
   };
-  
 
   return (
     <div className="container mx-auto max-w-md p-4">
-      <Header />
-      <ThemeSelector theme={theme} changeTheme={changeTheme} />
+      <div className="flex items-end justify-between mb-10">
+        <Logo />
+        <ThemeSelector theme={theme} changeTheme={changeTheme} />
+      </div>
       <Display displayValue={displayValue} />
       <Keypad handleButtonClick={handleButtonClick} />
     </div>

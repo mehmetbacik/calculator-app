@@ -8,6 +8,7 @@ $size: 32px;
 @mixin font {
     font-family: $family;
     font-size: $size;
+    line-height: normal;
 }
 
 

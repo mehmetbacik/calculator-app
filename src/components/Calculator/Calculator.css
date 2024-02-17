@@ -15,22 +15,14 @@
   margin-bottom: 10px;
 }
 
-.theme-selector {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 10px;
-}
-
-.theme-circle {
-  width: 20px;
-  height: 20px;
+.theme-button {
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background-color: gray;
-  margin-left: 5px;
   cursor: pointer;
 }
 
-.theme-circle.active {
+.theme-button.active {
   background-color: red;
 }
 
