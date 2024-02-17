@@ -1,7 +1,14 @@
 @import "variables";
 
-html {
-    body {
-        @include font;
-    }
+body {
+    @include font;
+        &.theme-1 {
+            background-color: $very-dark-desaturated-blue-main;
+        }
+        &.theme-2 {
+            background-color: $light-gray;
+        }
+        &.theme-3 {
+            background-color: $very-dark-violet-main;
+        }
 }

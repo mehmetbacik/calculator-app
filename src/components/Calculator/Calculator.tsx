@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Header } from "../Header/index.ts";
 import { Display } from "../Display/index.ts";
 import { Keypad } from "../Keypad/index.ts";
 import { ThemeSelector } from "../ThemeSelector/index.ts";
@@ -47,7 +48,8 @@ const Calculator: React.FC = () => {
   
 
   return (
-    <div className="container mx-auto max-w-md p-4 bg-gray-200 rounded-lg shadow-md">
+    <div className="container mx-auto max-w-md p-4">
+      <Header />
       <ThemeSelector theme={theme} changeTheme={changeTheme} />
       <Display displayValue={displayValue} />
       <Keypad handleButtonClick={handleButtonClick} />
