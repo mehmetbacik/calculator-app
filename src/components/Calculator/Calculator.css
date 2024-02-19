@@ -6,15 +6,6 @@
   padding: 20px;
 }
 
-.display {
-  background-color: black;
-  color: red;
-  font-size: 24px;
-  padding: 10px;
-  text-align: right;
-  margin-bottom: 10px;
-}
-
 .theme-button {
   width: 15px;
   height: 15px;

@@ -43,6 +43,10 @@ body {
                     }
                 }
             }
+            .display {
+                background-color: $very-dark-desaturated-blue-screen;
+                color: $white;
+            }
         }
         &.theme-2 {
             background-color: $light-gray;
@@ -85,6 +89,10 @@ body {
                     }
                 }
             }
+            .display {
+                background-color: $very-light-gray;
+                color: $very-dark-grayish-yellow;
+            }
         }
         &.theme-3 {
             background-color: $very-dark-violet-main;
@@ -126,6 +134,10 @@ body {
                         }
                     }
                 }
+            }
+            .display {
+                background-color: $very-dark-violet;
+                color: $light-yellow;
             }
         }
 }
