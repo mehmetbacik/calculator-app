@@ -47,6 +47,9 @@ body {
                 background-color: $very-dark-desaturated-blue-screen;
                 color: $white;
             }
+            .keypad {
+                background-color: $very-dark-desaturated-blue-toggle;
+            }
         }
         &.theme-2 {
             background-color: $light-gray;
@@ -93,6 +96,9 @@ body {
                 background-color: $very-light-gray;
                 color: $very-dark-grayish-yellow;
             }
+            .keypad {
+                background-color: $grayish-red;
+            }
         }
         &.theme-3 {
             background-color: $very-dark-violet-main;
@@ -138,6 +144,9 @@ body {
             .display {
                 background-color: $very-dark-violet;
                 color: $light-yellow;
+            }
+            .keypad {
+                background-color: $very-dark-violet;
             }
         }
 }

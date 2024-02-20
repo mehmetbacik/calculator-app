@@ -38,7 +38,7 @@ const Keypad: React.FC<KeypadProps> = ({ handleButtonClick }) => {
   }, [handleButtonClick]);
 
   return (
-    <div className="keypad grid grid-cols-4 gap-2">
+    <div className="keypad grid grid-cols-4 gap-2 p-[25px] rounded-[10px]">
       <button onClick={() => handleButtonClick("7")}>7</button>
       <button onClick={() => handleButtonClick("8")}>8</button>
       <button onClick={() => handleButtonClick("9")}>9</button>
