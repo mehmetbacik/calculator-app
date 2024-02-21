@@ -52,7 +52,7 @@ body.theme-1 .keypad button {
   box-shadow: 0 5px hsl(28, 16%, 65%);
   border-radius: 10px;
   border: none;
-  padding: 17px 10px 10px 10px;
+  padding: 18px 10px 10px 10px;
   cursor: pointer;
   transition: all 0.3s ease;
 }

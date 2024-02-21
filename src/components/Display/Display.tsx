@@ -5,7 +5,7 @@ interface DisplayProps {
 }
 
 const Display: React.FC<DisplayProps> = ({ displayValue }) => {
-  return <div className="display pt-[48px] p-[40px] mb-[30px] flex items-center justify-end text-[40px] font-bold rounded-[10px]">{displayValue}</div>;
+  return <div className="display pt-[45px] p-[40px] mb-[30px] flex items-center justify-end text-[40px] font-bold rounded-[10px]">{displayValue}</div>;
 };
 
 export default Display;
