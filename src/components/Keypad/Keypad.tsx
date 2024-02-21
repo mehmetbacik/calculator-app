@@ -38,11 +38,11 @@ const Keypad: React.FC<KeypadProps> = ({ handleButtonClick }) => {
   }, [handleButtonClick]);
 
   return (
-    <div className="keypad grid grid-cols-4 gap-2 p-[25px] rounded-[10px]">
+    <div className="keypad grid grid-cols-4 p-[25px] rounded-[10px]">
       <button onClick={() => handleButtonClick("7")}>7</button>
       <button onClick={() => handleButtonClick("8")}>8</button>
       <button onClick={() => handleButtonClick("9")}>9</button>
-      <button onClick={() => handleButtonClick("DEL")}>DEL</button>
+      <button className="del" onClick={() => handleButtonClick("DEL")}>DEL</button>
 
       <button onClick={() => handleButtonClick("4")}>4</button>
       <button onClick={() => handleButtonClick("5")}>5</button>
@@ -59,10 +59,10 @@ const Keypad: React.FC<KeypadProps> = ({ handleButtonClick }) => {
       <button onClick={() => handleButtonClick("/")}>/</button>
       <button onClick={() => handleButtonClick("*")}>x</button>
 
-      <button onClick={() => handleButtonClick("RESET")} className="col-span-2">
+      <button onClick={() => handleButtonClick("RESET")} className="col-span-2 reset">
         RESET
       </button>
-      <button onClick={() => handleButtonClick("=")} className="col-span-2">
+      <button onClick={() => handleButtonClick("=")} className="col-span-2 equal">
         =
       </button>
     </div>

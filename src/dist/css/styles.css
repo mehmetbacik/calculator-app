@@ -45,6 +45,30 @@ body.theme-1 .display {
 body.theme-1 .keypad {
   background-color: hsl(223, 31%, 20%);
 }
+body.theme-1 .keypad button {
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: hsl(28, 16%, 65%) 0px 3px 3px 0px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+body.theme-1 .keypad button:hover {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: white 0px 3px 3px 0px;
+}
+body.theme-1 .keypad button.del:hover {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: hsl(225, 21%, 49%) 0px 3px 3px 0px;
+}
+body.theme-1 .keypad button.reset:hover {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: hsl(225, 21%, 49%) 0px 3px 3px 0px;
+}
+body.theme-1 .keypad button.equal:hover {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: hsl(6, 63%, 50%) 0px 3px 3px 0px;
+}
 body.theme-2 {
   background-color: hsl(0, 0%, 90%);
 }

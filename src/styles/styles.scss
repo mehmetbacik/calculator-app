@@ -49,6 +49,36 @@ body {
             }
             .keypad {
                 background-color: $very-dark-desaturated-blue-toggle;
+                button {
+                    background-color: $light-grayish-orange;
+                    box-shadow: $grayish-orange 0px 3px 3px 0px;
+                    border-radius: 10px;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $white;
+                        box-shadow: white 0px 3px 3px 0px;
+                    }
+                    &.del {
+                        &:hover {
+                            background-color: $desaturated-dark-blue;
+                            box-shadow: $desaturated-dark-blue 0px 3px 3px 0px;
+                        }
+                    }
+                    &.reset {
+                        &:hover {
+                            background-color: $desaturated-dark-blue;
+                            box-shadow: $desaturated-dark-blue 0px 3px 3px 0px;
+                        }
+                    }
+                    &.equal {
+                        &:hover {
+                            background-color: $red;
+                            box-shadow: $red 0px 3px 3px 0px;
+                        }
+                    }
+                }
             }
         }
         &.theme-2 {

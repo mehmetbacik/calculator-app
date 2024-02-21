@@ -13,24 +13,8 @@
   cursor: pointer;
 }
 
-.theme-button.active {
-  background-color: red;
-}
-
 .keypad {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-}
-
-button {
-  padding: 10px;
-  font-size: 18px;
-  border: none;
-  background-color: lightblue;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: blue;
+  grid-gap: 20px;
 }
