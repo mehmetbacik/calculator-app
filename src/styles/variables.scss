@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 $family: 'League Spartan', sans-serif;
 $size: 32px;
@@ -10,7 +9,6 @@ $size: 32px;
     font-size: $size;
     line-height: normal;
 }
-
 
 $very-dark-desaturated-blue-main: hsl(222, 26%, 31%);
 $very-dark-desaturated-blue-toggle: hsl(223, 31%, 20%);

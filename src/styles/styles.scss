@@ -51,31 +51,45 @@ body {
                 background-color: $very-dark-desaturated-blue-toggle;
                 button {
                     background-color: $light-grayish-orange;
-                    box-shadow: $grayish-orange 0px 3px 3px 0px;
+                    color: $very-dark-grayish-blue;
+                    font-weight: bold;
+                    box-shadow: 0 5px $grayish-orange;
                     border-radius: 10px;
                     border: none;
-                    padding: 10px;
+                    padding: 17px 10px 10px 10px;
                     cursor: pointer;
+                    transition: all 0.3s ease;
                     &:hover {
                         background-color: $white;
-                        box-shadow: white 0px 3px 3px 0px;
+                        box-shadow: 0 5px $grayish-orange;
+                        transform: scale(0.95);
+                        color: $very-dark-grayish-blue;
                     }
                     &.del {
+                        font-size: 28px;
                         &:hover {
                             background-color: $desaturated-dark-blue;
-                            box-shadow: $desaturated-dark-blue 0px 3px 3px 0px;
+                            box-shadow: 0 5px $desaturated-dark-blue-shadow;
+                            transform: scale(0.95);
+                            color: $white;
                         }
                     }
                     &.reset {
+                        font-size: 28px;
                         &:hover {
                             background-color: $desaturated-dark-blue;
-                            box-shadow: $desaturated-dark-blue 0px 3px 3px 0px;
+                            box-shadow: 0 5px $desaturated-dark-blue-shadow;
+                            transform: scale(0.95);
+                            color: $white;
                         }
                     }
                     &.equal {
+                        font-size: 28px;
                         &:hover {
                             background-color: $red;
-                            box-shadow: $red 0px 3px 3px 0px;
+                            box-shadow: 0 5px $dark-red;
+                            transform: scale(0.95);
+                            color: $white;
                         }
                     }
                 }

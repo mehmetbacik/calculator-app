@@ -49,7 +49,7 @@ const Calculator: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-md p-4">
+    <div className="container mx-auto max-w-xl p-4">
       <div className="flex items-end justify-between mb-9">
         <Logo />
         <ThemeSelector theme={theme} changeTheme={changeTheme} />
