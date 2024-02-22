@@ -41,6 +41,7 @@ body.theme-1 .theme-selector .themes .buttons .theme-button.active {
 body.theme-1 .display {
   background-color: hsl(224, 36%, 15%);
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
 body.theme-1 .keypad {
   background-color: hsl(223, 31%, 20%);
@@ -126,9 +127,54 @@ body.theme-2 .theme-selector .themes .buttons .theme-button.active {
 body.theme-2 .display {
   background-color: hsl(0, 0%, 93%);
   color: hsl(60, 10%, 19%);
+  cursor: pointer;
 }
 body.theme-2 .keypad {
   background-color: hsl(0, 5%, 81%);
+}
+body.theme-2 .keypad button {
+  background-color: hsl(45, 7%, 89%);
+  color: hsl(60, 10%, 19%);
+  font-weight: bold;
+  box-shadow: 0 5px hsl(35, 11%, 61%);
+  border-radius: 10px;
+  border: none;
+  padding: 18px 10px 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body.theme-2 .keypad button:hover {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 5px hsl(28, 16%, 65%);
+  transform: scale(0.95);
+  color: hsl(221, 14%, 31%);
+}
+body.theme-2 .keypad button.del {
+  font-size: 28px;
+}
+body.theme-2 .keypad button.del:hover {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 5px hsl(185, 58%, 25%);
+  transform: scale(0.95);
+  color: hsl(0, 0%, 100%);
+}
+body.theme-2 .keypad button.reset {
+  font-size: 28px;
+}
+body.theme-2 .keypad button.reset:hover {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0 5px hsl(185, 58%, 25%);
+  transform: scale(0.95);
+  color: hsl(0, 0%, 100%);
+}
+body.theme-2 .keypad button.equal {
+  font-size: 28px;
+}
+body.theme-2 .keypad button.equal:hover {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0 5px hsl(25, 99%, 27%);
+  transform: scale(0.95);
+  color: hsl(0, 0%, 100%);
 }
 body.theme-3 {
   background-color: hsl(268, 75%, 9%);
