@@ -234,9 +234,54 @@ body {
             .display {
                 background-color: $very-dark-violet;
                 color: $light-yellow;
+                cursor: pointer;
             }
             .keypad {
                 background-color: $very-dark-violet;
+                button {
+                    background-color: $very-dark-violet-keys;
+                    color: $light-yellow;
+                    font-weight: bold;
+                    box-shadow: 0 5px $dark-magenta;
+                    border-radius: 10px;
+                    border: none;
+                    padding: 18px 10px 10px 10px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        background-color: $dark-violet;
+                        box-shadow: 0 5px $dark-magenta;
+                        transform: scale(0.95);
+                        color: $light-yellow;
+                    }
+                    &.del {
+                        font-size: 28px;
+                        &:hover {
+                            background-color: $vivid-magenta;
+                            box-shadow: 0 5px $dark-magenta;
+                            transform: scale(0.95);
+                            color: $white;
+                        }
+                    }
+                    &.reset {
+                        font-size: 28px;
+                        &:hover {
+                            background-color: $vivid-magenta;
+                            box-shadow: 0 5px $dark-magenta;
+                            transform: scale(0.95);
+                            color: $white;
+                        }
+                    }
+                    &.equal {
+                        font-size: 28px;
+                        &:hover {
+                            background-color: $soft-cyan;
+                            box-shadow: 0 5px $pure-cyan;
+                            transform: scale(0.95);
+                            color: $very-dark-blue;
+                        }
+                    }
+                }
             }
         }
 }

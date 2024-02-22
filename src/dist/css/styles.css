@@ -200,22 +200,67 @@ body.theme-3 .theme-selector .themes .title span {
   font-weight: bold;
 }
 body.theme-3 .theme-selector .themes .buttons {
-  background-color: hsl(268, 47%, 21%);
+  background-color: hsl(268, 71%, 12%);
   border-radius: 15px;
   padding: 5px;
 }
 body.theme-3 .theme-selector .themes .buttons .theme-button {
-  background-color: hsl(268, 47%, 21%);
+  background-color: hsl(268, 71%, 12%);
 }
 body.theme-3 .theme-selector .themes .buttons .theme-button.active {
   background-color: hsl(176, 100%, 44%);
 }
 body.theme-3 .display {
-  background-color: hsl(268, 47%, 21%);
+  background-color: hsl(268, 71%, 12%);
   color: hsl(52, 100%, 62%);
+  cursor: pointer;
 }
 body.theme-3 .keypad {
+  background-color: hsl(268, 71%, 12%);
+}
+body.theme-3 .keypad button {
   background-color: hsl(268, 47%, 21%);
+  color: hsl(52, 100%, 62%);
+  font-weight: bold;
+  box-shadow: 0 5px hsl(290, 70%, 36%);
+  border-radius: 10px;
+  border: none;
+  padding: 18px 10px 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body.theme-3 .keypad button:hover {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0 5px hsl(290, 70%, 36%);
+  transform: scale(0.95);
+  color: hsl(52, 100%, 62%);
+}
+body.theme-3 .keypad button.del {
+  font-size: 28px;
+}
+body.theme-3 .keypad button.del:hover {
+  background-color: hsl(285, 91%, 52%);
+  box-shadow: 0 5px hsl(290, 70%, 36%);
+  transform: scale(0.95);
+  color: hsl(0, 0%, 100%);
+}
+body.theme-3 .keypad button.reset {
+  font-size: 28px;
+}
+body.theme-3 .keypad button.reset:hover {
+  background-color: hsl(285, 91%, 52%);
+  box-shadow: 0 5px hsl(290, 70%, 36%);
+  transform: scale(0.95);
+  color: hsl(0, 0%, 100%);
+}
+body.theme-3 .keypad button.equal {
+  font-size: 28px;
+}
+body.theme-3 .keypad button.equal:hover {
+  background-color: hsl(177, 92%, 70%);
+  box-shadow: 0 5px hsl(176, 100%, 44%);
+  transform: scale(0.95);
+  color: hsl(198, 20%, 13%);
 }
 
 /*# sourceMappingURL=styles.css.map */
