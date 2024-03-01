@@ -1,3 +1,28 @@
+# Calculator App
+
+Calculator-App project is a web application where users can perform simple and advanced mathematical calculations. The app supports the basic four operations of addition, subtraction, multiplication and division. There are three different theme options that users can switch between. React.js and TypeScript were used in the project. Tailwind CSS and SCSS were used for interface design.
+
+## Technologies:
+
+- **React.js:** A powerful JavaScript library for building user interfaces in a declarative and efficient manner.
+
+- **TypeScript:** A statically typed superset of JavaScript that adds optional static typing and other features to the language.
+
+- **SCSS:** A more powerful and feature-rich extension of CSS that enables better organization and maintainability of stylesheets.
+
+- **Tailwind CSS:** A utility-first CSS framework for rapidly building custom user interfaces, providing low-level utility classes that can be composed to create any design directly in HTML markup.
+
+## Clone the Repository
+
+To clone the project, run the following commands:
+
+```
+git clone https://github.com/mehmetbacik/calculator-app.git
+```
+```
+cd calculator-app
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +69,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Deploy
+
+For a detailed exploration of the project, you can visit the [deployed site here](https://calculator-app-mbck00.vercel.app/).
+
+## GitHub Page
+
+GitHub Repository: [https://github.com/mehmetbacik/calculator-app.git](https://github.com/mehmetbacik/calculator-app.git)
+
+---
