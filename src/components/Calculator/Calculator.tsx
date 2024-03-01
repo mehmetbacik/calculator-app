@@ -3,7 +3,6 @@ import { Logo } from "../Logo/index.ts";
 import { Display } from "../Display/index.ts";
 import { Keypad } from "../Keypad/index.ts";
 import { ThemeSelector } from "../ThemeSelector/index.ts";
-import "./Calculator.css";
 
 import { evaluate } from "mathjs";
 

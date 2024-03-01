@@ -33,6 +33,10 @@ body.theme-1 .theme-selector .themes .buttons {
   padding: 5px;
 }
 body.theme-1 .theme-selector .themes .buttons .theme-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
   background-color: hsl(223, 31%, 20%);
 }
 body.theme-1 .theme-selector .themes .buttons .theme-button.active {
@@ -44,6 +48,9 @@ body.theme-1 .display {
   cursor: pointer;
 }
 body.theme-1 .keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
   background-color: hsl(223, 31%, 20%);
 }
 body.theme-1 .keypad button {
@@ -119,6 +126,10 @@ body.theme-2 .theme-selector .themes .buttons {
   padding: 5px;
 }
 body.theme-2 .theme-selector .themes .buttons .theme-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
   background-color: hsl(0, 5%, 81%);
 }
 body.theme-2 .theme-selector .themes .buttons .theme-button.active {
@@ -130,6 +141,9 @@ body.theme-2 .display {
   cursor: pointer;
 }
 body.theme-2 .keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
   background-color: hsl(0, 5%, 81%);
 }
 body.theme-2 .keypad button {
@@ -205,6 +219,10 @@ body.theme-3 .theme-selector .themes .buttons {
   padding: 5px;
 }
 body.theme-3 .theme-selector .themes .buttons .theme-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
   background-color: hsl(268, 71%, 12%);
 }
 body.theme-3 .theme-selector .themes .buttons .theme-button.active {
@@ -216,6 +234,9 @@ body.theme-3 .display {
   cursor: pointer;
 }
 body.theme-3 .keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
   background-color: hsl(268, 71%, 12%);
 }
 body.theme-3 .keypad button {
@@ -261,6 +282,77 @@ body.theme-3 .keypad button.equal:hover {
   box-shadow: 0 5px hsl(176, 100%, 44%);
   transform: scale(0.95);
   color: hsl(198, 20%, 13%);
+}
+
+@media (max-width: 425px) {
+  body.theme-1 .keypad {
+    grid-gap: 10px;
+  }
+  body.theme-1 .keypad button {
+    margin-bottom: 5px;
+  }
+  body.theme-2 .keypad {
+    grid-gap: 10px;
+  }
+  body.theme-2 .keypad button {
+    margin-bottom: 5px;
+  }
+  body.theme-3 .keypad {
+    grid-gap: 10px;
+  }
+  body.theme-3 .keypad button {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 320px) {
+  body.theme-1 .keypad {
+    grid-gap: 5px;
+  }
+  body.theme-1 .keypad button {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  body.theme-1 .keypad button.del {
+    font-size: 20px;
+  }
+  body.theme-1 .keypad button.reset {
+    font-size: 20px;
+  }
+  body.theme-1 .keypad button.equal {
+    font-size: 20px;
+  }
+  body.theme-2 .keypad {
+    grid-gap: 5px;
+  }
+  body.theme-2 .keypad button {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  body.theme-2 .keypad button.del {
+    font-size: 20px;
+  }
+  body.theme-2 .keypad button.reset {
+    font-size: 20px;
+  }
+  body.theme-2 .keypad button.equal {
+    font-size: 20px;
+  }
+  body.theme-3 .keypad {
+    grid-gap: 5px;
+  }
+  body.theme-3 .keypad button {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  body.theme-3 .keypad button.del {
+    font-size: 20px;
+  }
+  body.theme-3 .keypad button.reset {
+    font-size: 20px;
+  }
+  body.theme-3 .keypad button.equal {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

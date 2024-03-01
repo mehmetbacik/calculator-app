@@ -35,6 +35,10 @@ body {
                         border-radius: 15px;
                         padding: 5px;
                         .theme-button {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            cursor: pointer;
                             background-color: $very-dark-desaturated-blue-toggle;
                             &.active {
                                 background-color: $red;
@@ -49,6 +53,9 @@ body {
                 cursor: pointer;
             }
             .keypad {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 20px;
                 background-color: $very-dark-desaturated-blue-toggle;
                 button {
                     background-color: $light-grayish-orange;
@@ -129,6 +136,10 @@ body {
                         border-radius: 15px;
                         padding: 5px;
                         .theme-button {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            cursor: pointer;
                             background-color: $grayish-red;
                             &.active {
                                 background-color: $orange;
@@ -143,6 +154,9 @@ body {
                 cursor: pointer;
             }
             .keypad {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 20px;
                 background-color: $grayish-red;
                 button {
                     background-color: $light-grayish-yellow;
@@ -223,6 +237,10 @@ body {
                         border-radius: 15px;
                         padding: 5px;
                         .theme-button {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            cursor: pointer;
                             background-color: $very-dark-violet;
                             &.active {
                                 background-color: $pure-cyan;
@@ -237,6 +255,9 @@ body {
                 cursor: pointer;
             }
             .keypad {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 20px;
                 background-color: $very-dark-violet;
                 button {
                     background-color: $very-dark-violet-keys;
@@ -284,4 +305,92 @@ body {
                 }
             }
         }
+}
+
+@media (max-width: 425px) {
+    body {
+        &.theme-1 {
+            .keypad {
+                grid-gap: 10px;
+                button {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &.theme-2 {
+            .keypad {
+                grid-gap: 10px;
+                button {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &.theme-3 {
+            .keypad {
+                grid-gap: 10px;
+                button {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        &.theme-1 {
+            .keypad {
+                grid-gap: 5px;
+                button {
+                    margin-bottom: 5px;
+                    font-size: 20px;
+                    &.del {
+                        font-size: 20px;
+                    }
+                    &.reset {
+                        font-size: 20px;
+                    }
+                    &.equal {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &.theme-2 {
+            .keypad {
+                grid-gap: 5px;
+                button {
+                    margin-bottom: 5px;
+                    font-size: 20px;
+                    &.del {
+                        font-size: 20px;
+                    }
+                    &.reset {
+                        font-size: 20px;
+                    }
+                    &.equal {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        &.theme-3 {
+            .keypad {
+                grid-gap: 5px;
+                button {
+                    margin-bottom: 5px;
+                    font-size: 20px;
+                    &.del {
+                        font-size: 20px;
+                    }
+                    &.reset {
+                        font-size: 20px;
+                    }
+                    &.equal {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
