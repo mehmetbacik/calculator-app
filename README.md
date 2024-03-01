@@ -23,6 +23,21 @@ git clone https://github.com/mehmetbacik/calculator-app.git
 cd calculator-app
 ```
 
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm start
+```
+
+### Compiling and minimizing SCSS files for production
+```
+npm run sass-watch
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
